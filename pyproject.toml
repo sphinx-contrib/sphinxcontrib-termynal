@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "sphinxcontrib-termynal"
 version = "0.0.0"
-description = "A Sphinx extention to use termynal windows in the html build"
+description = "A Sphinx extension to use termynal windows in the html build"
 keywords = [
   "skeleton",
   "Python"

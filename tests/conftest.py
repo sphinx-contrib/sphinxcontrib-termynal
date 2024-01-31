@@ -1,5 +1,6 @@
 """Pytest configuration."""
 from pathlib import Path
+
 import pytest
 
 # we decided to use the pytest plugin from sphinx itself to access the sphinx test utilities

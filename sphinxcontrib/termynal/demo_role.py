@@ -10,7 +10,7 @@ documentation/test workflows.
 """
 from __future__ import annotations
 
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 
 from docutils import nodes
 from sphinx.util import logging
@@ -21,6 +21,7 @@ logger = logging.getLogger(__name__)
 
 class demo_node(nodes.General, nodes.Element):
     """The demo node."""
+
     pass
 
 

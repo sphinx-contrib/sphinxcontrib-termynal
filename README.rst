@@ -41,7 +41,7 @@ termynal
 Overview
 --------
 
-A Sphinx extention to use termynal windows in the html build
+A Sphinx extension to use termynal windows in the html build
 
 Credits
 -------

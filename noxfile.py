@@ -2,12 +2,11 @@
 
 The nox run are build in isolated environment that will be stored in .nox. to force the venv update, remove the .nox/xxx folder.
 """
-import datetime
-import fileinput
 
 import nox
 
 nox.options.sessions = ["lint", "test", "docs", "mypy"]
+
 
 @nox.session(reuse_venv=True)
 def lint(session):
@@ -28,7 +27,7 @@ def test(session):
 def ci_test(session):
     """Run all the test and report coverage in xml."""
     session.install(".[test]")
-    name = session.posargs[0] if session.posargs else "default"
+    session.posargs[0] if session.posargs else "default"
     session.run("pytest", "--color=yes", "--cov", "--cov-report=xml")
 
 

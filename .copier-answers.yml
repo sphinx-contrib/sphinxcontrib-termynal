@@ -4,7 +4,7 @@ _src_path: gh:sphinx-contrib/copier-sphinxcontrib
 author_email: pierrick.rambaud49@gmail.com
 author_first_name: Pierrick
 author_last_name: Rambaud
-creation_year: '2024'
+creation_year: "2024"
 github_repo_name: sphinxcontrib-termynal
 github_user: sphinx-contrib
 project_name: termynal

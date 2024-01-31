@@ -10,21 +10,17 @@ documentation/test workflows.
 """
 from __future__ import annotations
 
-from pathlib import Path
-from typing import Any, Dict, List
+from typing import List
 
 from docutils import nodes
-from docutils.parsers.rst import directives
-from sphinx.application import Sphinx
 from sphinx.util import logging
 from sphinx.util.docutils import SphinxDirective
-from yaml import safe_load
 
 logger = logging.getLogger(__name__)
 
 
 class DemoDirective(SphinxDirective):
-    """A demo directive simply setting the text in bold"""
+    """A demo directive simply setting the text in bold."""
 
     arguments = 1
     final_argument_whitespace = False
