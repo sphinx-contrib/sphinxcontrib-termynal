@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier
+_commit: 0.0.1
+_src_path: gh:sphinx-contrib/copier-sphinxcontrib
+author_email: pierrick.rambaud49@gmail.com
+author_first_name: Pierrick
+author_last_name: Rambaud
+creation_year: '2024'
+github_repo_name: sphinxcontrib-termynal
+github_user: sphinx-contrib
+project_name: termynal
+project_slug: termynal
+short_description: A Sphinx extention to use termynal windows in the html build

@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  tests:
+    uses: ./.github/workflows/unit.yaml
+
+  deploy:
+    needs: [tests]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: pip install twine build nox
+      - name: Build and publish
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: python -m build && twine upload dist/*
