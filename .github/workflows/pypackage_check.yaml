@@ -9,8 +9,8 @@ jobs:
   check_version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
       - name: install dependencies
@@ -18,7 +18,7 @@ jobs:
       - name: get latest pypackage release
         id: get_latest_release
         run: |
-          RELEASE=$(curl -s https://api.github.com/repos/12rambau/pypackage/releases | jq -r '.[0].tag_name')
+          RELEASE=$(curl -s https://api.github.com/repos/sphinx-contrib/copier-sphinxcontrib/releases | jq -r '.[0].tag_name')
           echo "latest=$RELEASE" >> $GITHUB_OUTPUT
           echo "latest release: $RELEASE"
       - name: get current pypackage version
@@ -34,7 +34,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: "Update template to ${{ steps.get_latest_release.outputs.latest }}"
           body: |
-            The package is based on the ${{ steps.get_current_version.outputs.current }} version of [@12rambau/pypackage](https://github.com/12rambau/pypackage).
+            The package is based on the ${{ steps.get_current_version.outputs.current }} version of [@sphinx-contrib/copier-sphinxcontrib](https://github.com/sphinx-contrib/copier-sphinxcontrib).
 
             The latest version of the template is ${{ steps.get_latest_release.outputs.latest }}.
 

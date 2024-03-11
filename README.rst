@@ -46,4 +46,4 @@ A Sphinx extension to use termynal windows in the html build
 Credits
 -------
 
-This package was created with `Copier <https://copier.readthedocs.io/en/latest/>`__ and the `@sphinx-contrib/copier-sphinxcontrib <https://github.com/sphinx-contrib/copier-sphinxcontrib>`__ 0.0.1 extension template.
+This package was created with `Copier <https://copier.readthedocs.io/en/latest/>`__ and the `@sphinx-contrib/copier-sphinxcontrib <https://github.com/sphinx-contrib/copier-sphinxcontrib>`__ 0.0.2 extension template.

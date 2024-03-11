@@ -55,7 +55,7 @@ doc = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["sphinxcontrib/termynal"]
+only-include = ["sphinxcontrib"]
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -103,7 +103,7 @@ docstring-quotes = "double"
 convention = "google"
 
 [tool.coverage.run]
-source = ["sphinxcontrib/termynal"]
+source = ["sphinxcontrib.termynal"]
 
 [tool.doc8]
 ignore = ["D001"] # we follow a 1 line = 1 paragraph style
