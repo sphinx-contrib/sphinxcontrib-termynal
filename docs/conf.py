@@ -22,6 +22,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_design",
     "autoapi.extension",
+    "sphinxcontrib.termynal",
 ]
 exclude_patterns = ["**.ipynb_checkpoints"]
 templates_path = ["_template"]
